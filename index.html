@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Gaming Bestie Story 💜</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Fredoka+One:wght@400&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Floating hearts background -->
+    <div class="floating-hearts" id="floatingHearts"></div>
+
+    <!-- Page 1: Welcome/Name Input -->
+    <div class="page active" id="page1">
+        <div class="welcome-container">
+            <h1 class="welcome-title">Our Gaming Story 💜</h1>
+            <p class="welcome-subtitle">A journey of friendship through pixels and laughter 🎮</p>
+            <div class="input-container">
+                <label class="input-label">What should I call you, bestie? 💕</label>
+                <input type="text" class="name-input" id="nameInput" placeholder="Enter your name...">
+                <button class="start-btn" id="startBtn" onclick="startJourney()">Start Our Story ✨</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 2: How we met -->
+    <div class="page" id="page2">
+        <div class="timeline-container">
+            <div class="page-number">Chapter 1 of 5</div>
+            <div class="milestone-card">
+                <div class="milestone-icon">💬</div>
+                <h2 class="milestone-title">How We Met</h2>
+                <p class="milestone-description">
+                    It all started with a simple Instagram reel comment! Who knew that one little interaction would spark the beginning of the most amazing gaming friendship? Sometimes the best connections happen in the most unexpected places! 🌟
+                </p>
+                <button class="next-btn" onclick="nextPage(3)">Next Chapter 💕</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 3: Early chats & gaming invites -->
+    <div class="page" id="page3">
+        <div class="timeline-container">
+            <div class="page-number">Chapter 2 of 5</div>
+            <div class="milestone-card">
+                <div class="milestone-icon">🎮</div>
+                <h2 class="milestone-title">First Gaming Invites</h2>
+                <p class="milestone-description">
+                    Those early chats were so exciting! "Want to play together?" became our favorite question. From awkward first matches to discovering we had the same gaming style - it was like finding a gaming soulmate! 🎯
+                </p>
+                <button class="next-btn" onclick="nextPage(4)">Continue Story 🌸</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 4: Late-night gaming & gossip -->
+    <div class="page" id="page4">
+        <div class="timeline-container">
+            <div class="page-number">Chapter 3 of 5</div>
+            <div class="milestone-card">
+                <div class="milestone-icon">🌙</div>
+                <h2 class="milestone-title">Late-Night Sessions</h2>
+                <p class="milestone-description">
+                    Those late-night gaming sessions where we'd play "just one more game" until 11-12 PM! Between matches, we'd share stories, gossip, and dreams. Gaming became our excuse to spend hours just talking and laughing together! 💫
+                </p>
+                <button class="next-btn" onclick="nextPage(5)">Keep Going 💜</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 5: Becoming inseparable -->
+    <div class="page" id="page5">
+        <div class="timeline-container">
+            <div class="page-number">Chapter 4 of 5</div>
+            <div class="milestone-card">
+                <div class="milestone-icon">👯‍♀️</div>
+                <h2 class="milestone-title">Inseparable Besties</h2>
+                <p class="milestone-description">
+                    And then it happened - we became completely inseparable! Daily check-ins, sharing memes, celebrating wins together, and being there for each other through everything. Gaming brought us together, but friendship made us family! 💕
+                </p>
+                <button class="next-btn" onclick="nextPage(6)">Final Chapter ✨</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page 6: Thank you -->
+    <div class="page" id="page6">
+        <div class="timeline-container">
+            <div class="thank-you-card">
+                <div class="sparkles" id="sparkles"></div>
+                <h2 class="thank-you-title">Thank You! 💖</h2>
+                <div class="milestone-icon">🏆</div>
+                <p class="milestone-description">
+                    <span id="userName">Bestie</span>, Thank you for being the most amazing gaming partner and friend anyone could ask for! From that first comment to countless adventures, you've made every moment special. Here's to many more levels, laughs, and memories together! 🎮💜✨
+                </p>
+                <button class="next-btn" onclick="restartJourney()">Relive Our Story 🔄</button>
+            </div>
+        </div>
+    </div>
+
+<script src="index.js"></script>
+</body>
+</html>
